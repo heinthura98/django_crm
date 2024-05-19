@@ -1,0 +1,23 @@
+{% extends 'base.html'%}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <div class="col-md-6 offset-md-3">
+        <h1>Register</h1>
+        <form method="POST" action="">
+            <br/> <br/>
+            {% csrf_token %}
+            {{ form.as_p }}
+             <br/>
+            <button type="submit" class="btn btn-secondary">Register</button>
+        </form>
+    </div>
+</head>
+<body>
+
+</body>
+</html>
+{% endblock %}

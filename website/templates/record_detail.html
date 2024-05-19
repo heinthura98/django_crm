@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Record Details:</h1><br/>
+                    {{ customer_record.first_name }} {{ customer_record.last_name }} <br/>
+                    {{ customer_record.email }}<br/>
+                    {{ customer_record.phone }}<br/>
+                    {{ customer_record.address }}<br/>
+                    {{ customer_record.city }}<br/>
+                    {{ customer_record.state }}<br/>
+                    {{ customer_record.zipcode }}<br/>
+
+</body>
+</html>
+{% endblock %}
